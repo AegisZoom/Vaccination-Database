@@ -1,0 +1,217 @@
+Vaccine Type,Country,Percentage of vaccine type
+CanSino,Argentina,0.8455116302932228
+Moderna,Argentina,15.997960856420812
+Oxford/AstraZeneca,Argentina,22.89513303044753
+Pfizer/BioNTech,Argentina,17.708634733037872
+Sinopharm/Beijing,Argentina,24.778945529666938
+Sputnik Light,Argentina,0.027959833754437707
+Sputnik V,Argentina,17.74585438637919
+Johnson&Johnson,Austria,1.8013769577187877
+Moderna,Austria,8.143710332891866
+Novavax,Austria,0.07367412000655359
+Oxford/AstraZeneca,Austria,7.787534845273106
+Pfizer/BioNTech,Austria,82.18095630796711
+Sanofi/GSK,Austria,0.0017156250329927892
+Valneva,Austria,0.011031811109586112
+Johnson&Johnson,Belgium,1.4473149802315344
+Moderna,Belgium,14.820887879067508
+Novavax,Belgium,0.008636896789319717
+Oxford/AstraZeneca,Belgium,9.620432696374012
+Pfizer/BioNTech,Belgium,74.10272754753763
+Johnson&Johnson,Bulgaria,11.518564901672926
+Moderna,Bulgaria,11.089167755772332
+Oxford/AstraZeneca,Bulgaria,10.365029809800347
+Pfizer/BioNTech,Bulgaria,67.0272375327544
+Johnson&Johnson,Canada,0.024792146004521984
+Medicago,Canada,0.0009069400195796055
+Moderna,Canada,30.271182947720057
+Novavax,Canada,0.029880678536160974
+Oxford/AstraZeneca,Canada,2.958850302718818
+Pfizer/BioNTech,Canada,66.71438698500086
+CanSino,Chile,0.0
+Moderna,Chile,0.0
+Oxford/AstraZeneca,Chile,1.5904525567585373
+Pfizer/BioNTech,Chile,23.34357383939581
+Sinovac,Chile,75.06597360384565
+Johnson&Johnson,Croatia,3.796478716192766
+Moderna,Croatia,9.737195969346237
+Novavax,Croatia,0.025402038956685094
+Oxford/AstraZeneca,Croatia,10.497927961589754
+Pfizer/BioNTech,Croatia,75.94299531391455
+Johnson&Johnson,Cyprus,1.7297972697199728
+Moderna,Cyprus,11.120793481716746
+Novavax,Cyprus,0.050168909419226665
+Oxford/AstraZeneca,Cyprus,14.172633388884774
+Pfizer/BioNTech,Cyprus,72.92660695025928
+Covaxin,Czechia,5.250140861279308e-05
+Johnson&Johnson,Czechia,2.1793019706718733
+Moderna,Czechia,8.629147270021255
+Novavax,Czechia,0.06166290441572547
+Oxford/AstraZeneca,Czechia,4.660975303967406
+Pfizer/BioNTech,Czechia,84.46628223035223
+Sinopharm/Beijing,Czechia,0.00048301295923769633
+Sinovac,Czechia,0.0019530524003959027
+Sputnik V,Czechia,0.00012075323980942408
+Valneva,Czechia,2.1000563445117232e-05
+Johnson&Johnson,Denmark,0.3217042997412357
+Moderna,Denmark,12.52880082237425
+Oxford/AstraZeneca,Denmark,1.1029314806281239
+Pfizer/BioNTech,Denmark,86.04656339725639
+CanSino,Ecuador,1.7948920853905161
+Oxford/AstraZeneca,Ecuador,16.74652348771427
+Pfizer/BioNTech,Ecuador,28.59312818456509
+Sinovac,Ecuador,52.865456242330126
+Johnson&Johnson,Estonia,3.5936682965522535
+Moderna,Estonia,11.11473543472424
+Novavax,Estonia,0.09844733067808722
+Oxford/AstraZeneca,Estonia,10.817894244760872
+Pfizer/BioNTech,Estonia,74.37525469328455
+Johnson&Johnson,Finland,0.0
+Moderna,Finland,16.021083097630036
+Novavax,Finland,0.0
+Oxford/AstraZeneca,Finland,4.290308594078572
+Pfizer/BioNTech,Finland,79.68860830829139
+Valneva,Finland,0.0
+Johnson&Johnson,France,0.7062366071023445
+Moderna,France,15.621001241568678
+Novavax,France,0.025858732250504692
+Oxford/AstraZeneca,France,5.089579762007232
+Pfizer/BioNTech,France,78.5542031327113
+Sanofi/GSK,France,0.0031205243599420054
+Johnson&Johnson,Germany,2.016605240070739
+Moderna,Germany,16.934392745600412
+Novavax,Germany,0.08586279166209106
+Oxford/AstraZeneca,Germany,6.864102764627594
+Pfizer/BioNTech,Germany,74.09478390322653
+Valneva,Germany,0.0042525548126409966
+Pfizer/BioNTech,Hong Kong,57.36393468392858
+Sinovac,Hong Kong,42.63606531607142
+Johnson&Johnson,Hungary,2.0863348264697037
+Moderna,Hungary,6.5074773094505485
+Oxford/AstraZeneca,Hungary,7.555293752024152
+Pfizer/BioNTech,Hungary,58.990327305534144
+Sinopharm/Beijing,Hungary,13.96222901842107
+Sputnik V,Hungary,10.898337788100378
+Johnson&Johnson,Iceland,0.10224087951213058
+Moderna,Iceland,7.810000360850163
+Oxford/AstraZeneca,Iceland,0.001202833876613301
+Pfizer/BioNTech,Iceland,92.08655592576109
+Johnson&Johnson,Ireland,1.8526685223395827
+Moderna,Ireland,13.695221741876908
+Novavax,Ireland,0.007717919322527633
+Oxford/AstraZeneca,Ireland,9.342414879473997
+Pfizer/BioNTech,Ireland,75.10197693698699
+Johnson&Johnson,Italy,1.0431762058472789
+Moderna,Italy,23.766478064318047
+Novavax,Italy,0.029962898740926894
+Oxford/AstraZeneca,Italy,8.418963933456377
+Pfizer/BioNTech,Italy,66.74127506133978
+Sanofi/GSK,Italy,0.0001438362975862077
+Moderna,Japan,21.73376902093948
+Novavax,Japan,0.08223683653348336
+Oxford/AstraZeneca,Japan,0.030721223430377587
+Pfizer/BioNTech,Japan,78.15327291909666
+Johnson&Johnson,Latvia,10.145976403870929
+Moderna,Latvia,24.70204440165972
+Novavax,Latvia,0.015123510394651112
+Oxford/AstraZeneca,Latvia,9.047968114944204
+Pfizer/BioNTech,Latvia,56.087644540878884
+Sinopharm/Beijing,Latvia,0.0009322711887113699
+Sinovac,Latvia,0.00031075706290378997
+Johnson&Johnson,Liechtenstein,0.3698825902989884
+Moderna,Liechtenstein,68.10182979796565
+Novavax,Liechtenstein,0.0014010704177991986
+Pfizer/BioNTech,Liechtenstein,31.526886541317566
+Johnson&Johnson,Lithuania,6.536135816520562
+Moderna,Lithuania,7.278869989161696
+Oxford/AstraZeneca,Lithuania,11.84986463715535
+Pfizer/BioNTech,Lithuania,74.33512955716239
+Johnson&Johnson,Luxembourg,3.3594688300210747
+Moderna,Luxembourg,27.700605044301934
+Novavax,Luxembourg,0.04030391417370501
+Oxford/AstraZeneca,Luxembourg,8.502183533342182
+Pfizer/BioNTech,Luxembourg,60.39743867816111
+Johnson&Johnson,Malta,2.5200188412623645
+Moderna,Malta,21.686572802357954
+Oxford/AstraZeneca,Malta,17.712263454324706
+Pfizer/BioNTech,Malta,58.08114490205497
+Johnson&Johnson,Nepal,7.87710521278598
+Moderna,Nepal,15.646287462217206
+Oxford/AstraZeneca,Nepal,30.046763489437346
+Pfizer/BioNTech,Nepal,3.833772233131772
+Sinopharm/Beijing,Nepal,42.5960716024277
+Johnson&Johnson,Netherlands,1.9446054990321875
+Moderna,Netherlands,29.3934946126377
+Novavax,Netherlands,0.010612161926101432
+Oxford/AstraZeneca,Netherlands,6.3192950602704485
+Pfizer/BioNTech,Netherlands,62.331992666133566
+Johnson&Johnson,Norway,0.05949727324836947
+Moderna,Norway,19.244379028119443
+Oxford/AstraZeneca,Norway,1.18600031961279
+Pfizer/BioNTech,Norway,79.51012337901939
+Moderna,Peru,8.164812764282553
+Oxford/AstraZeneca,Peru,8.957005698778001
+Pfizer/BioNTech,Peru,59.53542171110366
+Sinopharm/Beijing,Peru,23.34275982583579
+Johnson&Johnson,Poland,5.068160126896323
+Moderna,Poland,7.138693733666531
+Novavax,Poland,0.029442594973985013
+Oxford/AstraZeneca,Poland,9.819773392956257
+Pfizer/BioNTech,Poland,77.9439301515069
+Covaxin,Portugal,0.0006355340477719594
+Johnson&Johnson,Portugal,4.317281142974695
+Moderna,Portugal,14.898242109040922
+Novavax,Portugal,0.0010592234129532657
+Oxford/AstraZeneca,Portugal,8.709316978318567
+Pfizer/BioNTech,Portugal,72.0152039415519
+Sanofi/GSK,Portugal,0.0002912864385621481
+Sinopharm/Beijing,Portugal,0.01906223849239824
+Sinovac,Portugal,0.038907545722229785
+Johnson&Johnson,Romania,12.210100783919833
+Moderna,Romania,5.995161725286831
+Oxford/AstraZeneca,Romania,5.048638875706092
+Pfizer/BioNTech,Romania,76.74609861508725
+Johnson&Johnson,Slovakia,2.683533448301415
+Moderna,Slovakia,9.807324143081303
+Novavax,Slovakia,0.0538148467104236
+Oxford/AstraZeneca,Slovakia,12.148471420934982
+Pfizer/BioNTech,Slovakia,74.76017499897479
+Sputnik V,Slovakia,0.546681141997092
+Johnson&Johnson,Slovenia,4.521698695282245
+Moderna,Slovenia,7.880920160573452
+Novavax,Slovenia,0.007783476381157841
+Oxford/AstraZeneca,Slovenia,10.7286703517363
+Pfizer/BioNTech,Slovenia,76.86089391054881
+Sanofi/GSK,Slovenia,3.3405478030720344e-05
+Johnson&Johnson,South Africa,24.615320894584322
+Pfizer/BioNTech,South Africa,75.38467910541569
+Johnson&Johnson,South Korea,1.7343497376250578
+Moderna,South Korea,15.355464690055218
+Novavax,South Korea,0.3018556774589443
+Oxford/AstraZeneca,South Korea,22.90957039208421
+Pfizer/BioNTech,South Korea,59.69809972769127
+SKYCovione,South Korea,0.0006597750853033728
+Johnson&Johnson,Spain,1.7546703911303887
+Moderna,Spain,21.580241328345558
+Oxford/AstraZeneca,Spain,8.67150617154647
+Pfizer/BioNTech,Spain,67.99358210897758
+Moderna,Sweden,18.316309289867004
+Novavax,Sweden,0.031153112606323235
+Oxford/AstraZeneca,Sweden,5.798185547409169
+Pfizer/BioNTech,Sweden,75.8543520501175
+Johnson&Johnson,Switzerland,0.37607838709397245
+Moderna,Switzerland,62.87591516632064
+Novavax,Switzerland,0.021867152293519224
+Pfizer/BioNTech,Switzerland,36.72613929429187
+Johnson&Johnson,Ukraine,0.06527095811643417
+Moderna,Ukraine,9.610419492155334
+Oxford/AstraZeneca,Ukraine,12.755886301020947
+Pfizer/BioNTech,Ukraine,46.63027000651132
+Sinovac,Ukraine,30.93815324219597
+Johnson&Johnson,United States,2.8234937527493535
+Moderna,United States,37.44391229734176
+Novavax,United States,0.012346927506629819
+Pfizer/BioNTech,United States,59.720247022402255
+Oxford/AstraZeneca,Uruguay,1.557178865226683
+Pfizer/BioNTech,Uruguay,43.54163917708483
+Sinovac,Uruguay,54.901181957688486
