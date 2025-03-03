@@ -24,9 +24,9 @@ Performed statistical operations using SQL queries. Constructed data visualisati
 - 📊 **Data Visualisation**:
 Constructed a variety of different visualisations in the last phase to showcase trends and compare different groups of data.
 - 🧼 **Data Cleaning**:
-Performed data tidying procedures to reformat datasets for database integration, scanned for missing values, errors and inconsistencies. Split and combined datasets together.
+Split and combined datasets together, performed data tidying procedures to reformat datasets for database integration, scanned for missing values, errors and inconsistencies.
 - 📐 **Problem-Solving**:
-Strategised creative means to incorporated statistical data into SQL queries for extraction, with statistical data being dependent on neighbouring/grouped data.
+Strategised creative means to incorporate statistical data into SQL queries for extraction, with statistical data being dependent on neighbouring/grouped data.
 - 🔍 **Debugging/Attention to Detail**:
 Devoted extensive time to identifying root cause of errors in SQL query outputs. Scrutinised query outputs for incorrect/missing records.
 - ⏰ **Time Management**:
@@ -40,18 +40,19 @@ Phase 1 of the project was to investigate and understand the source datasets for
 
 Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav 5, 947–953 (2021). https://doi.org/10.1038/s41562-021-01122-8
 
-Note: The dataset can more accessibly be downloaded here: https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations
+**Note**: The dataset can more accessibly be downloaded here: https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations
 
-A total of nine csv files were supplied for the purpose of this task, and a database needed to be designed to house everything. The example below features *Ireland.csv*, a csv file detailing vaccination statistics for Ireland across the COVID-19 pandemic for each available COVID-19 vaccine brand with citations provided.
+A total of nine csv files were supplied for the purpose of this task, and a database needed to be designed to house everything. The example below features *Ireland.csv*, a csv file detailing vaccination statistics for Ireland across the COVID-19 pandemic with citations and available manufacturers provided.
 
 ![Dataset](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/Dataset.PNG)
 
-The contents of all the other source csv files are described below:
+The contents of all the other source csv files used for the assessment are described below. For more detailed descriptions, please see *Database Concepts A4 Phase 1.pdf*
+in the *csv_data* folder.
 
-- **China.csv**: Equivalent in contents to *Ireland.csv*, except that it covers vaccianations in China instead.
-- **India.csv**: Equivalent in contents to *Ireland.csv*, except that it covers vaccianations in India instead.
+- **China.csv**: Equivalent in contents to *Ireland.csv*, except that it covers vaccinations in China instead.
+- **India.csv**: Equivalent in contents to *Ireland.csv*, except that it covers vaccinations in India instead.
 - **locations.csv**: Lists all nations and their available vaccines on their last observation dates with citations.
-- **United States.csv**: Equivalent in contents to *Ireland.csv*, except that it covers vaccianations in the United States instead.
+- **United States.csv**: Equivalent in contents to *Ireland.csv*, except that it covers vaccinations in the United States instead.
 - **us_state_vaccinations.csv**: Provides various vaccination statistics for each state in the US across the COVID-19 pandemic, including full vaccinations, daily vaccinations, and boosters administered.
 - **vaccinations.csv**: Provides various vaccination statistics for each nation across the COVID-19 pandemic, including full vaccinations, daily vaccinations, and boosters administered.
 - **vaccinations-by-age-group.csv**: Provides various vaccination statistics for each nation per age group across the COVID-19 pandemic.
@@ -59,27 +60,13 @@ The contents of all the other source csv files are described below:
 
 ## Phase 2: Database Design
 
-With Phase 1 completed, the next step was to map the relations and relationships of the database between each other using an entity-relationship diagram. The final result is shown below:
+With Phase 1 completed, the next step was to map the relations and relationships of the database using an entity-relationship diagram. The final result is shown below:
 
 ![ER_Diagram](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/ER_Diagram.PNG)
 
-This diagram operates under the following extra conditions:
+This diagram makes several assumptions about the nature of the data, which can be found in the *Model.pdf* file.
 
-- The Source entity does not necessarily have a direct relationship to the Country entity. For example, 
-the World Health Organisation is a global institution that shares vaccine statistics but is not confined 
-to any specific country. 
-- Vaccine manufacturers must supply stock to at least one country, but a country does not need to 
-have a vaccine. 
-- Not every Manufacturer & Country combination contains statistics for the ManufacturerStats 
-entity. 
-- Each record in CountryStats can only relate to one country, and does not necessarily need a source. 
-- Each record in StateStats can only relate to one state, and never has any source.  
-- For CountryStats records related to the whole population of the region, the corresponding 
-AgeRange value is simply “0+”.  
-- Each Date only appears once per StateName in the StateStats entity, and once per (CountryName 
-and AgeRange) combo in the CountryStats entity.
-
-Afterwards, the seven steps of mapping the entity-relationship model to a relational schema were applied. Afterwards, the schema was normalised to satisfy 1NF, 2NF, and 3NF conditions. The final relational schema is shown below. For context the name of the table is listed outside the brackets, the variables are listed inside, and the primary signifies it is a primary key while the asterisk signifies it is a foreign key.
+Afterwards, the seven steps of mapping the entity-relationship model to a relational schema were applied. Afterwards, the schema was normalised to satisfy 1NF, 2NF, and 3NF conditions. The final relational schema is shown below. For context the name of the table is listed outside the brackets, the variables are listed inside, and the underline signifies the variable is a primary key while the asterisk signifies it is a foreign key.
 
 - Country (<ins>CountryName</ins>, CountryCode) 
 - Manufacturer (<ins>ManufacturerName</ins>) 
@@ -95,30 +82,14 @@ For more details about the relational mapping and normalisation process, see the
 
 ## Phase 3: Database Loading
 
-The phase involved programming a database, transforming the source data into valid formats for the database, and finally populating the database with data. An example of constructing a relation for the database is shown below. The ManufacturerStats relation uses non-null data types, primary keys, and foreign keys to connect with
+This phase involved programming a database, transforming the source data into valid formats for the database, and finally populating the database with data. An example of constructing a relation for the database is shown below. The *ManufacturerStats* relation uses non-null specifications, primary keys, and foreign keys to connect with
 other relations in the database. This relation is later populated with the data from *ManufacturerStats.csv* found in the *csv_data* folder. For the other queries used to construct the database, please view the *Database.sql* file.
 
-CREATE TABLE ManufacturerStats (
+![Query_P3](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/Query_P3.PNG)
 
-             ManufacturerName CHARACTER NOT NULL,
-
-             CountryName CHARACTER NOT NULL,
-
-             Date DATE NOT NULL,
-
-             TotalVaccinations INTEGER NOT NULL,
-
-             PRIMARY KEY (ManufacturerName, CountryName, Date),
-
-             FOREIGN KEY (ManufacturerName) REFERENCES Manufacturer(ManufacturerName),
-
-             FOREIGN KEY (CountryName) REFERENCES Country(CountryName)
-
-             );
-`
 ## Phase 4: Queries and Visualisation
 
-Finally, this phase involved performing data analysis and visualisation on data extracted using SQL queries. The extracted data would also feature statistical variables that contained information on trends in vaccinations over time. For example, the query below fetches the total number of people fully vaccinated on each day in 2022 and 2023. This required imposing seven self-joins on the dataset with the Date column to feature each of the four countries as separate variables in one query, such that respective dates between the same countries differed by one day.
+Finally, this phase involved performing analysis and visualisation on data extracted using SQL queries. The extracted data would also feature statistical variables that contained information on trends in vaccinations over time. For example, the query below fetches the total number of new people fully vaccinated on each observation date between 2022 and 2023. This required imposing seven self-joins on the dataset with the *Date* column to feature each of the four countries as separate columns in one query.
 
 ![Query2](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/Query.png)
 
