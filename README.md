@@ -96,3 +96,15 @@ Finally, this phase involved performing analysis and visualisation on data extra
 ![D5](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/D5_Output.PNG)
 
 ![Chart](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/Chart.png)
+
+## Files, Folders and Specifications
+
+In the repository, there are a variety of different files available. *Vaccinations_database.zip* contains the complete database of the project with all relations
+populated with data. *Database.sql* contains the SQL code to construct each relation, with instructions on how to do so included. *Queries.sql* contains the code
+used in Phase 4, while *Queries.pdf* contains those queries, snapshots of their outputs, and associated data visualisations. *Model.pdf* details the design process
+of the database from scratch.
+
+In the *csv_data* folder, *original_data.zip* contains the source data used for the assessment. *Database Concepts A4 Phase 1.pdf* contains summaries on the data
+structures of each of the original data files. The *phase_4* subfolder contains all the outputs of the phase 4 queries as csv files. The rest of the csv files contain the transformed data inserted into the database.
+
+Finally, the *Images* folder contains the images used to construct this summary.
