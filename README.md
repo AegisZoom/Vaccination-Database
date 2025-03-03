@@ -95,3 +95,18 @@ For more details about the relational mapping and normalisation process, see the
 
 ## Phase 3: Database Loading
 
+The phase involved programming a database, transforming the source data into valid formats for the database, and finally populating the database with data. An example of constructing a relation for the database is shown below. The ManufacturerStats relation uses non-null data types, primary keys, and foreign keys to connect with
+other relations in the database. This relation is later populated with the data from *ManufacturerStats.csv* found in the *csv_data* folder. For the other queries used to construct the database, please view the *Database.sql* file.
+
+CREATE TABLE ManufacturerStats (
+             ManufacturerName CHARACTER NOT NULL,
+             CountryName CHARACTER NOT NULL,
+             Date DATE NOT NULL,
+             TotalVaccinations INTEGER NOT NULL,
+             PRIMARY KEY (ManufacturerName, CountryName, Date),
+             FOREIGN KEY (ManufacturerName) REFERENCES Manufacturer(ManufacturerName),
+             FOREIGN KEY (CountryName) REFERENCES Country(CountryName)
+             );
+
+## Phase 4: Queries and Visualisation
+
