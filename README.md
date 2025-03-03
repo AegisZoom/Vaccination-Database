@@ -7,7 +7,7 @@
 ## Introduction
 
 This repository contains my work for the fourth and final assessment for ISYS1055 in my Graduate Diploma of Data Science. This assessment was
-split into four phases: the first required me to investigate the datasets provided and understand their meaning, data types and relationships.
+split into four phases: the first required me to investigate and understand the datasets provided.
 The second phase required me to design a database that would adequately house all the data using good design principles. The third phase
 required me to construct the database using SQLiteStudio and to load the transformed data into it successfully. The fourth and final phase
 was where I constructed SQL queries to extract data based on requested specifications to perform data visualisations. This page will summarise the work I conducted beyond the
@@ -18,7 +18,7 @@ first phase.
 - 💾 **Programming**:
 Used SQL 🌐 to construct a database and to extract data based on conditions. SQL programming was also used to perform statistical analyses of records. R 📉 was used as a programming language to transform and visualise the data.
 - 🔨 **Database Design**: Constructed the database by firstly designing an Entity-Relationship Diagram, mapping the diagram to a relational schema, then finally performing normalisation procedures to streamline database design.
-- 🎣 **SQL Query Extraction**: Performed complex SQL queries to extract data based on specifications while conducting complex statistical operations and presenting them in additional data columns.
+- 🎣 **SQL Query Extraction**: Performed complex SQL queries to extract data based on specifications while conducting complex statistical operations and presenting them as additional data columns.
 - 📈 **Data Analysis**:
 Performed statistical operations using SQL queries. Constructed data visualisations to summarise trends in data.
 - 📊 **Data Visualisation**:
@@ -99,14 +99,29 @@ The phase involved programming a database, transforming the source data into val
 other relations in the database. This relation is later populated with the data from *ManufacturerStats.csv* found in the *csv_data* folder. For the other queries used to construct the database, please view the *Database.sql* file.
 
 CREATE TABLE ManufacturerStats (
-             ManufacturerName CHARACTER NOT NULL,
-             CountryName CHARACTER NOT NULL,
-             Date DATE NOT NULL,
-             TotalVaccinations INTEGER NOT NULL,
-             PRIMARY KEY (ManufacturerName, CountryName, Date),
-             FOREIGN KEY (ManufacturerName) REFERENCES Manufacturer(ManufacturerName),
-             FOREIGN KEY (CountryName) REFERENCES Country(CountryName)
-             );
 
+             ManufacturerName CHARACTER NOT NULL,
+
+             CountryName CHARACTER NOT NULL,
+
+             Date DATE NOT NULL,
+
+             TotalVaccinations INTEGER NOT NULL,
+
+             PRIMARY KEY (ManufacturerName, CountryName, Date),
+
+             FOREIGN KEY (ManufacturerName) REFERENCES Manufacturer(ManufacturerName),
+
+             FOREIGN KEY (CountryName) REFERENCES Country(CountryName)
+
+             );
+`
 ## Phase 4: Queries and Visualisation
 
+Finally, this phase involved performing data analysis and visualisation on data extracted using SQL queries. The extracted data would also feature statistical variables that contained information on trends in vaccinations over time. For example, the query below fetches the total number of people fully vaccinated on each day in 2022 and 2023. This required imposing seven self-joins on the dataset with the Date column to feature each of the four countries as separate variables in one query, such that respective dates between the same countries differed by one day.
+
+![Query2](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/Query.png)
+
+![D5](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/D5_Output.PNG)
+
+![Chart](https://github.com/AegisZoom/Vaccination-Database/blob/main/Images/Chart.png)
