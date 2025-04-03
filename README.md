@@ -38,9 +38,14 @@ Conducted research on datasets to understand design requirements of the final da
 
 Phase 1 of the project was to investigate and understand the source datasets for the project. The original datasets are made accessible in *original_data.zip* in the *csv_data* folder. The original source is referenced below:
 
-Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav 5, 947–953 (2021). https://doi.org/10.1038/s41562-021-01122-8
+Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. *Nat Hum Behav* 5, 947–953 (2021). https://doi.org/10.1038/s41562-021-01122-8
 
 **Note**: The dataset can more accessibly be downloaded here: https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations
+
+*This dataset received modifications, specifically involving the rearranging of variables and data structures as well as the creation of new tables in order to be loaded into a database built on strong design principles. 
+These modifications were shared in the *csv_data* folder, and further modifications were shared in the *phase_4* sub-folder, where the contained files were used for data analysis. The original unmodified data was shared in the *original_data.zip* file within the *csv_data* folder.
+The database containing the modified data shared from the *csv_data* folder is shared as a zip file named *Vaccinations_database.zip*. For more information about these files and their uses, refer to the Files, Folders and Specifications section.
+The sharing and application of the modified and and unmodified datasets is applied under the **Creative Commons Attribution 4.0 International License** belonging to the original dataset, which can be accessed in the following link: https://creativecommons.org/licenses/by/4.0/*
 
 A total of nine csv files were supplied for the purpose of this task, and a database needed to be designed to house everything. The example below features *Ireland.csv*, a csv file detailing vaccination statistics for Ireland across the COVID-19 pandemic with citations and available manufacturers provided.
 
